@@ -36,16 +36,16 @@
 }
 
 .head {
-    background: linear-gradient(red , yellow);
+    background: linear-gradient(rgb(252, 4, 4) , yellow);
     border : 2px solid purple ;
     transform: scale(1.02);
     border-radius: 9px ;
 }
 
 .food {
-    background : linear-gradient(red , purple) ;
-    border: .25vmin solid black ;
-    border-radius: 8px;
+    background : linear-gradient(rgb(179, 160, 54) , rgb(132, 14, 51)) ;
+    border: .45vmin solid black ;
+    border-radius: 50px;
 }
 
 #scorebox  {
