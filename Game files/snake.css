@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0px ;
+    padding : 0%;
+}
+
+.bg {
+    min-height: 100vh;
+    background: url("../necessities/bg.jpg");
+    background-size: 100vw 100vh ;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#gamearea {
+    background : linear-gradient(rgb(120, 229, 76) , rgb(185, 204, 46));
+    height: 92vmin;
+    width: 90vmin; 
+    /* vmin matlb vh aur vw me se jo chota ho ga vo aur vmax matlab jo dono me se bada hoga . */
+    position: relative;
+    right: 10vw;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18 , 1fr);
+    grid-template-columns: repeat(18,1fr);
+    
+}
+
+.snake {
+    background-color: rgb(129, 16, 103);
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.head {
+    background: linear-gradient(red , yellow);
+    border : 2px solid purple ;
+    transform: scale(1.02);
+    border-radius: 9px ;
+}
+
+.food {
+    background : linear-gradient(red , purple) ;
+    border: .25vmin solid black ;
+    border-radius: 8px;
+}
+
+#scorebox  {
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 48px ;
+    font-family: "New Tegomin", serif;
+    font-weight: 600;
+    font-style: normal;
+    /* color:rgb(224, 224, 161); */
+    color: black;
+}
+
+#highscore {
+    z-index: 10;
+    position: absolute;
+    top: 78px;
+    font-family: "New Tegomin", serif;
+    font-weight: 600;
+    font-style: normal;
+    right: 100px;
+    font-size: 48px ;
+    color:rgb(224, 224, 161);
+}
